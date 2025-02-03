@@ -1,6 +1,7 @@
-import "./Home1.css"
+import "./Home.css"
 import carpinchImg from "../assets/carpinch.png"
-export default function Home1() {
+import { AnimatedText } from "./AnimatedText"
+export default function Home() {
     return(
         <>
             <div className="Home1__container">
@@ -8,11 +9,11 @@ export default function Home1() {
                     <img className="Home1__img" alt="carpincho" src={carpinchImg}></img>
                 </div>
                 <div className="Home1__text-container">
-                    <h1>VIDEOJUEGO<br></br>
-                    EXPERIENCIAS LÚDICAS<br></br> 
-                    ANTARTIDAASD<br></br>
-                    ASOI VIDEOKEUGOS<br></br>
-                    ANSOC SOSC SOSK AS</h1>
+                    <AnimatedText word="VIDEOJUEGO"></AnimatedText>
+                    <AnimatedText word="EXPERIENCIAS LÚDICAS"></AnimatedText>
+                    <AnimatedText word="ANTARTIDAASD"></AnimatedText>
+                    <AnimatedText word="ASOI VIDEOKEUGOS"></AnimatedText>
+                    <AnimatedText word="ANSOC SOSC SOSK AS"></AnimatedText>
                 </div>
                 <div className="Home1__text2-container">
                     <h4>Qué hacemos</h4>

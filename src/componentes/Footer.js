@@ -5,11 +5,16 @@ export default function Footer() {
     return(
         <>
             <div className="footer__container">
-
+                <div className="footer__text-container">
+                    <h6>Estudio Antártida</h6>
+                    <p>info.estudioantartida@gmail.com</p>
+                </div>
                 <hr class="separador"></hr>
                 <div className="footer__svg-container">
-                    <Instagram></Instagram>
-                    <Youtube></Youtube>
+                    <div className="footer__svgs">
+                        <Instagram></Instagram>
+                        <Youtube></Youtube>
+                    </div>
                 </div>
             </div>
         </>
