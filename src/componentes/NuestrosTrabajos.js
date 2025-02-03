@@ -1,4 +1,4 @@
-import "NuestrosTrabajos.css";
+import "./NuestrosTrabajos.css";
 import mesh1 from "../assets/mesh1.png";
 import TrabajoCard from "./TrabajoCard";
 

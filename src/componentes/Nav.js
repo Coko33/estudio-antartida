@@ -2,13 +2,19 @@ import Logo from '../svgs/Logo';
 import './Nav.css'
 import { useState, useEffect } from "react";
 import { AnimatedText } from './AnimatedText';
+import { useNavigate,Link } from "react-router-dom";
 
 export default function Nav() {
+	const navigate = useNavigate();
     const [navIsOpen, setNavIsOpen] = useState(false);
+	const goToHome = () => {
+		navigate("/");
+		navIsOpen && setNavIsOpen(false)
+	  };
     return(
         <>
             <div className='nav__container'>
-                <div className='nav-logo__container floating-icon'>
+                <div onClick={goToHome} className='nav-logo__container floating-icon'>
                     <Logo></Logo>
                 </div>
                 <div className='nav-title__container'><AnimatedText word="ESTUDIO ANTARTIDA"></AnimatedText></div>
@@ -24,7 +30,7 @@ export default function Nav() {
             <div class={`nav-list__container`}>
 		    	<nav>
 		    		<ul class={`container_menu flex_column ${navIsOpen && 'navIsOpen'}`}>
-		    			<li><a href="#">nuestros trabajos</a></li>
+		    			<li onClick={() => setNavIsOpen(prev => !prev)}><Link to="/nuestrostrabajos">nuestros trabajos</Link></li>
 		    			<li><a href="#">nosotros</a></li>
 		    			<li><a href="#">diseños</a></li>
 		    			<li><a href="#">contacto</a></li>
