@@ -16,13 +16,13 @@
     position: relative;
     z-index: 10;
     width: calc(100% - 60px);
-    margin: -10px 30px 70px 30px;
-    padding: 0 20px;
+    margin: -70px 30px 70px 30px;
+    padding: 0 20px 0 0;
 }
 .Home1__text-container h1{
     color: #fff;
-    line-height: clamp(1.5rem, 5vw, 3rem);
-    font-size: clamp(1.5rem, 4vw, 3rem);
+    line-height: clamp(1.4rem, 5vw, 30rem);
+    font-size: clamp(1rem, 6vw, 30rem);
     text-align: right;
     
 }
@@ -69,12 +69,12 @@
     color:#fff;
   } 
   .Home1__text2-container h4 {
-    line-height: clamp(1rem, 8vw, 30rem);
-    font-size: clamp(1rem, 4vw, 30rem);
+    line-height: clamp(1rem, 6vw, 30rem);
+    font-size: clamp(1rem, 6vw, 30rem);
     font-weight: 400;
   }
   .Home1__text2-container p {
-    line-height: clamp(0.5rem, 3.7vw, 30rem);
-    font-size: clamp(0.5rem, 3.7vw, 30rem);
+    line-height: clamp(0.5rem, 4.8vw, 30rem);
+    font-size: clamp(0.5rem, 4.5vw, 30rem);
     font-weight: 200;
   }

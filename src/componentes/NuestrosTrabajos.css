@@ -1,24 +1,77 @@
+
 .trabajoCard__container {
+    position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
+    background-color: #000;
 }
 .trabajoCard__imgContainer {
-
+    position: relative;
+    display: flex;
 }
 .trabajoCard__imgContainer img {
-    border-radius: 16px;
+    position: relative;
+    border-radius: 4px;
+    width: var(--ancho_margenCorto);
+    margin: var(--margenCorto);
+    margin-bottom: 0;
 }
 
 .trabajoCard__button {
     position: absolute;
-    width: 62px;
-    height: 18px;
-    font-family: 'Inter';
+    right: 26px;
+    bottom: 13px;
+    width: 154px;
+    height: 38px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 200;
     font-size: 16px;
     line-height: 18px;
     text-align: center;
     color: #FFFFFF;
+    background-color: var(--azul);
+    border: none;
+    border-radius: 16px;
+}
+.trabajoCard__tituloContainer {
+    position: relative; 
+}
+.trabajoCard__tituloContainer h4, .trabajoCard__tituloContainer p, .trabajoCard__textContainer li, .trabajoCard__textContainer p, .trabajoCard__textContainer u {
+    color: #FFFFFF;
+    font-family: "Inter", serif;
+    margin-left: var(--margenCorto);
+}
+.trabajoCard__textContainer p, .trabajoCard__textContainer u {
+    margin-left: 5px;
+    margin-right: var(--margenCorto);
+}
+.trabajoCard__tituloContainer h4 {
+    font-size: 6vw;
+    margin-top: var(--margenCorto);
+}
+.trabajoCard__tituloContainer p {
+    font-size: 3vw;
+    font-weight: 200;
+    margin-bottom: 26px;
+}
+.trabajoCard__textContainer {
+    max-height: 0; 
+    overflow: hidden; 
+    transition: max-height 1s ease-out;
+    background-color: #000;
+    padding: 0 10px;
+  }
+  
+  .trabajoCard__textContainer.open {
+    max-height: 2500px; 
+  }
+  ul {
+    list-style: none; /* Quita los puntos predeterminados */
+    padding-left: 0;  /* Ajusta el espaciado si es necesario */
+}
+
+ul li::before {
+    content: "- "; /* Agrega un guion antes del texto */
+    font-weight: bold; /* Opcional: hace que el guion sea más visible */
 }

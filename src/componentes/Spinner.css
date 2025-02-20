@@ -1,0 +1,22 @@
+.Spinner__container{
+    position: fixed;
+    top: 0px;
+    background-color: #979797;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Spinner__container h2 {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+.Spinner__svgContainer {
+    position: relative;
+    z-index: 11000;
+    width: 100px;
+}

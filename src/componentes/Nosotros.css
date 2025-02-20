@@ -1,0 +1,23 @@
+.Nosotros__container {
+    position: relative;
+    background-color: #000;
+}
+.Nosotros__personaContainer {
+    position: relative;
+    background-color: #000;
+    margin-bottom: 30px;
+}
+.Nosotros__personaContainer p, .Nosotros__personaContainer h2 {
+    color: #fff;
+    padding: 0 var(--margenCorto);
+}
+.Nosotros__personaImgContainer {
+    position: relative;
+    width: 100%;
+}
+.Nosotros__personaImg {
+    position: relative;
+    width: 100%;
+    padding: var(--margenCorto);
+    border-radius: 20px;
+}
